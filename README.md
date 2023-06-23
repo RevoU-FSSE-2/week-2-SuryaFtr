@@ -1,6 +1,6 @@
 # Banana Dish Recipe Website - Banana Chef
 
-This website is about recipes for how to make banana dishes, which are accompanied by a video tutorial demo recipe for making banana dishes.
+The content of this website, is to show a recipes for how to make banana dishes, which are accompanied by a video tutorial demo recipe for making banana dishes.
 
 ##  The language used on this website
 
@@ -18,28 +18,32 @@ This website is about recipes for how to make banana dishes, which are accompani
 
 ## Some content and functions interaction on this website that need attention
 
-Website ini merupakan website satu halaman, yang mana link menu dan beberapa tombol pada website ini tidak akan berfungsi seperti seharusnya.
+This website is a one-page website, where the menu links and some buttons on this website will not work as they should.
 
-Namun ada beberapa fungi interaksi yang harus diperhatikan di website ini.
+However, there are several interaction functions that must be considered on this website.
 
-### 1. Fungsi tombol hamburger icon
+### 1. The function of the hamburger icon button
 
-Pada bagian kanan atas website terdapat gambar hamburger icon, yang akan muncul saat membuka webiste ini di resolusi layar yang kurang dari 1024 pixel. Adapun pada device yang dipakai untuk membuka website ini adalah mobile device. Yang mana gambar tersebut merupakan sebuah tombol yang akan memicu sebuah fungsi untuk memunculkan konten menu navigasi(navbar) tersembunyi pada bagian kiri website, apabila tombol itu di-klik.
+At the top right of the website there is an image of a hamburger icon, which will appear when opening this website at a screen resolution of less than 1024 pixels. Or the device used to open this website is a mobile device. Which image is a button that will trigger a function to display hidden navigation menu (navbar) content on the left side of the website, when the button is clicked.
 
-### 2. Fungsi pemilihan radio button, di konten untuk pengisian sebuah form
+### 2. The radio button selection function, in the content for filling out a form
 
-Pada bagian konten untuk pengisian sebuah form, di bagian bawah website, terdapat sebuah form pertanyaan dengan menyediakan 2 buah pilihan form radio button. Yang mana jawaban pilihan dari form radio button itu akan berpengaruh pada konten pengisian form selanjutnya.
+In the content section for filling out a form, at the bottom of the website, there is an inquiry form providing 2 radio button form options. Which answer choice from the form radio button will affect the content of the next form filling.
 
 ## Layout Website
-Link website : 
+Link website : https://banacef.netlify.app/
 
 ## About Me
 
 ![Surya Faturohman Photo](https://i.ibb.co/2S8gZvr/suryaftr-pic-1.png "Surya Faturohman Photo")
 
-I am from Bogor and the graduated student of a high school majoring in software engineering class on 2015 and also a graduate of Pakuan University majoring in computer science on 2022.
+RevoU FSSE Section Barcelona 
 
-My motivation to join RevoU was to return to my former soul and enthusiasm, to code a program and upgrade my skills more in the field of software engineering.
+Team 6
+
+"I am from Bogor and the graduated student of a high school majoring in software engineering class on 2015 and also a graduate of Pakuan University majoring in computer science on 2022."
+
+"My motivation to join RevoU was to return to my former soul and enthusiasm, to code a program and upgrade my skills more in the field of software engineering."
 
 ## Contact Me
 Phone : 0838 1142 2863
@@ -48,8 +52,6 @@ E-Mail : suryafaturohman@gmail.com
 
 LinkedIn : https://www.linkedin.com/in/surya-faturohman/
 
-Address : 
 
-Jl. Dekeng No.49 RT02/RW03 Kel.Genteng Kec Bogor Selatan Kode POS. 16137
 
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/6H2sAzcR)
