@@ -30,7 +30,7 @@ At the top right of the website there is an image of a hamburger icon, which wil
 
 In the content section for filling out a form, at the bottom of the website, there is an inquiry form providing 2 radio button form options. Which answer choice from the form radio button will affect the content of the next form filling.
 
-## Layout Website
+## Website Layout
 Website link : https://banacef.netlify.app/
 
 ## About Me
