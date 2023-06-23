@@ -1,5 +1,5 @@
 .mobile-mode {
-    display: none;
+    display: none !important;
 }
 
 .desktop-mode {
@@ -8,7 +8,8 @@
 
 @media only screen and (max-width: 1023px) {
     .mobile-mode {
-        display: block;
+        display: block !important;
+        cursor: pointer;
     }
 
     .desktop-mode {
@@ -31,6 +32,8 @@
     iframe {
         max-width: 300px;
     }
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
 @media only screen and (min-width: 425px) {
@@ -50,7 +53,7 @@
         display: flex;
         align-items: start;
         justify-content: center;
-        gap: 20px;
+        gap: 0;
     }
     
     #banana-dish > .flex-container figure img {

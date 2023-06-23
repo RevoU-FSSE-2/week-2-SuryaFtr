@@ -20,15 +20,29 @@
     />
 </head>
 <body>
-    <nav>
-        <span class="mobile-mode">
+    <nav id="mySidenav" class="sidenav">
+        <span class="banana-icon banana-sidebar">
+            <img
+                src="https://i.ibb.co/DkbrM8v/banana-icon.png"
+                alt="Banana Chef Icon"
+            >
+            <b style="color: #FFE733; font-size: 1.2em;">BanaCef</b>
+        </span>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#" class="active">Home</a>
+        <a href="#">Recipe List</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <nav id="desktop-nav">
+        <span class="mobile-mode" onclick="openNav()">
             <img 
                 src="https://user-images.githubusercontent.com/2970318/209647125-dc41103d-c545-4e2e-b89b-099fbfcde702.svg"
                 alt="Hamburger Icon"
             >
         </span>
         <span class="title-container">
-            <div>
+            <div class="banana-icon">
                 <img
                     src="https://i.ibb.co/DkbrM8v/banana-icon.png"
                     alt="Banana Chef Icon"
@@ -121,8 +135,8 @@
             </div>
         </section>
         <section id="video-more">
+            <h2>Step to Cook It :</h2>
             <div class="flex-container">
-                <h3>Step to Cook It :</h3>
                 <iframe 
                 width="598" 
                 height="336" 
@@ -139,7 +153,7 @@
         </section>
         <section id="form-survey">
             <h2>Make us know about your interest on banana !</h2>
-            <form action="#">
+            <form action="#" id="survey">
                 <fieldset>
                     <legend>Enter your personal data :</legend>
                     <div>
@@ -150,9 +164,6 @@
                         <label for="email">Email :</label>
                         <input id="email" placeholder="Input Your E-Mail"  type="email" required>
                     </div>
-                </fieldset>
-                <fieldset>
-                    <legend>Join our survey</legend>
                     <div>
                         <p>Do you like banana ?</p>
                         <input type="radio" id="yes" name="likeBanana" value="Yes" />
@@ -160,51 +171,69 @@
                         <input type="radio" id="no" name="likeBanana" value="No" />
                         <label for="no">No</label>
                     </div>
-                    <div>
-                        <label for="types">Select a type banana that you like :</label>
-                        <select name="types" id="types"  required>
-                            <option>Select a banana type</option>
-                            <option value="applebananas">Apple Bananas</option>
-                            <option value="cavendishbananas">Cavendish Bananas</option>
-                            <option value="ladysfingerbananas">Lady's Finger Bananas</option>
-                            <option value="pisangraja">Pisang Raja</option>
-                            <option value="cokingbananas">Cooking Bananas</option>
-                            <option value="redbananas">Red Bananas</option>
-                        </select>
-                    </div> 
-                    <div>
-                        <label for="cooks">Select a banana dish that you like most :</label>
-                        <select name="cooks" id="cooks" required>
-                            <option>Select a banana dish</option>
-                            <option value="friedbanana">Fried Banana</option>
-                            <option value="bananamolen">Banana Molen</option>
-                            <option value="bananabolen">Banana Bolen</option>
-                            <option value="bananacroquettes">Banana Croquettes</option>
-                            <option value="bananachips">Banana Chips</option>
-                        </select>
-                    </div>
-                    <div>
-                        <p>Describe why you like banana ?</p>
-                        <textarea rows="3" placeholder="Input your description"></textarea>
-                    </div>
-                    <div>
-                        <p>Upload your most like banana dish photo here :</p>
-                        <input
-                            type="file"
-                            id="photo"
-                            name="myBananaDish"
-                            required
-                            accept="image/png, image/jpeg"
-                        >
-                    </div>
                 </fieldset>
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
+                <button type="submit" id="next-button" onclick="switchMode()">Next</button>
+                <div id="survey-yes">
+                    <fieldset>
+                        <legend>Join our survey</legend>
+                        <div>
+                            <label for="types">Select a type banana that you like :</label>
+                            <select name="types" id="types"  required>
+                                <option>Select a banana type</option>
+                                <option value="applebananas">Apple Bananas</option>
+                                <option value="cavendishbananas">Cavendish Bananas</option>
+                                <option value="ladysfingerbananas">Lady's Finger Bananas</option>
+                                <option value="pisangraja">Pisang Raja</option>
+                                <option value="cokingbananas">Cooking Bananas</option>
+                                <option value="redbananas">Red Bananas</option>
+                            </select>
+                        </div> 
+                        <div>
+                            <label for="cooks">Select a banana dish that you like most :</label>
+                            <select name="cooks" id="cooks" required>
+                                <option>Select a banana dish</option>
+                                <option value="friedbanana">Fried Banana</option>
+                                <option value="bananamolen">Banana Molen</option>
+                                <option value="bananabolen">Banana Bolen</option>
+                                <option value="bananacroquettes">Banana Croquettes</option>
+                                <option value="bananachips">Banana Chips</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p>Describe why you like banana ?</p>
+                            <textarea rows="3" placeholder="Input your description"></textarea>
+                        </div>
+                        <div>
+                            <p>Upload your most like banana dish photo here :</p>
+                            <input
+                                type="file"
+                                id="photo"
+                                name="myBananaDish"
+                                required
+                                accept="image/png, image/jpeg"
+                            >
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+                <div id="survey-no">
+                    <fieldset>
+                        <legend>Join our survey</legend>
+                        <div>
+                            <p>Describe why you don't like banana ?</p>
+                            <textarea rows="3" placeholder="Input your description"></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>                
             </form>
         </section>
     </main>
     <footer>
         Developed By Surya Faturohman. Copyright © 2023.
     </footer>
+    <script type="text/javascript" src="assets/javascript/style.js"></script>
 </body>
 </html>
